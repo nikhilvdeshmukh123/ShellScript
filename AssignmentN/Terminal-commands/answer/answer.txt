@@ -1,0 +1,29 @@
+Assignmet 
+
+1)
+
+2)
+$ for file in *.txt;
+do
+foldername=`echo $file | awk -F. '{print $1}'`;
+mkdir $foldername;
+mv $file $foldername;
+done
+
+
+
+
+
+
+
+
+
+Data.csv Answer:
+
+1)	cat data.csv | awk '{if ($4 > 10000 ) {print $2"     " $7}}'
+
+2)	cat data.csv | grep CAPTAIN | awk '{sum+=$7/$num}END{print sum}'
+
+3)	cat data.csv | awk '{if ( 7000 < $5 < 10000 ) END {print $3 $5}}'
+
+4)	cat data.csv | awk '{sum+=$4/$num}END{print sum}'

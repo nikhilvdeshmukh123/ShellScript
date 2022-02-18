@@ -1,0 +1,48 @@
+
+Q1) Random Function ((RANDOM)) to get single digit number
+ans: 
+x=$((RANDOM%10))
+echo $x
+
+
+Q2) Dice Number 1 to 6
+ans: 
+x=$((RANDOM%6+1))
+echo $x
+
+Q3) Add two Random Dice Number & Print Result
+ans: 
+x=$((RANDOM%6+1)) y=$((RANDOM%6+1));
+z=$((x+$y))
+        echo $z
+
+Q4) Program that reads 5 Random 2 Digit values, then their sum & avg.
+ans:
+a=$((RANDOM%89+10));
+        echo $a
+b=$((RANDOM%89+10));
+        echo $b
+c=$((RANDOM%89+10));
+        echo $c
+d=$((RANDOM%89+10));
+        echo $d
+e=$((RANDOM%89+10));
+        echo $e
+x=$(($a+$b+$c+$d+$e));
+
+y=$((($a+$b+$c+$d+$e)/5)) ;
+        echo $x "Sum"
+        echo $y "Average"
+Output:
+47
+44
+65
+59
+25
+240 Sum
+48 Average
+
+
+Q5)
+
+
