@@ -1,0 +1,53 @@
+Day: Assignmet on Terminal Commands 
+
+Q1) Move files from one folder to respective folder
+
+a)create files
+$ touch a.txt b.txt c.txt
+
+b)Print all files to move
+$ ls
+
+c)Seperate basename from extension
+for fole in *.txt
+> do
+> foldername=`echo $file | awk -F. '{print $1}'`
+> echo $foldername;
+> done
+a
+b
+c
+
+d)Make folder
+$ for file in *.txt ; do foldername=`echo $file | awk -F. '{print $1}'`; mkdir $foldername; done
+$ ls -p
+
+e)Move file to folder
+$ for file in *.txt ; do foldername=`echo $file | awk _f. '{print $1}'`; rm -r $foldername; mkdir $foldername; mv $file $foldername; done
+
+Q2)
+
+a) Create file with name abc.log.1
+$ touch abc.log.1, def.log.1, ghi.log.1, jkl.log.1, mno
+
+Q3) Check if foldername exists or not. If it is not present create it.
+
+a) If folder is not present then create it.
+$ nano foldercheck.sh
+
+b)If folder is present print folder is already present.
+$ bash foldercheck.sh
+
+c)
+$ bash foldercheck.sh
+
+Q4) Data.csv Answer:
+
+1)$ cat data.csv | awk '{if ($4 > 10000 ) {print $2"     " $7}}'
+
+2)$ cat data.csv | grep CAPTAIN | awk '{sum+=$7/$num}END{print sum}'
+
+3)$ cat data.csv | awk '{if ( 7000 < $5 < 10000 ) END {print $3 $5}}'
+
+4)$ cat data.csv | awk '{sum+=$4/$num}END{print sum}'
+
